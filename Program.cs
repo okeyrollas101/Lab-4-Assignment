@@ -13,7 +13,6 @@ namespace Lab_4_Assignment
            Console.WriteLine("Welcome, Please Enter Your Name");
            string studentName = Console.ReadLine().ToUpper();
            Console.WriteLine($"Hello {studentName}, this is the calculation for your cgpa");
-           int[] grades = new int [5];
            Console.Write("Please Enter your first score: ");
            int firstScore = int.Parse(Console.ReadLine());
            Console.Write("Please Enter your second score: ");
@@ -25,6 +24,7 @@ namespace Lab_4_Assignment
            Console.Write("Please Enter your fifth score: ");
            int fifthScore = int.Parse(Console.ReadLine());
 
+           int[] grades = new int [5];
            grades[0] = firstScore / 10;
            grades[1] = secondScore / 10;
            grades[2] = thirdScore / 10;
